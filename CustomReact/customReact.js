@@ -11,8 +11,10 @@ container.appendChild(DomEelenment)
 const DomEelement = document.createElement(rectEelement.type);
 DomEelement.innerHTML = rectEelement.children;
 for (const prop in rectEelement["props"]) {
-    if(prop=='children') continue
+    if(prop==='children') continue
     DomEelement.setAttribute(prop,rectEelement.props[prop])
+   
+
 }
 container.appendChild(DomEelement)
 }
